@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.colt.settings.utils;
+package com.blissroms.blissify.preference.Utils;
 
 import android.app.Activity;
 import android.content.Context;
