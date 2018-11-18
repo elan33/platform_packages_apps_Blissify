@@ -791,5 +791,6 @@
     <string name="screenshot_type_title">Screenshot type</string>
     <string name="screenshot_type_fullscreen">Fullscreen screenshots</string>
     <string name="screenshot_type_partial">Partial screenshots</string>
-
+ <!-- Advanced Controls -->
+	<string name="advanced_controls_title">Advanced Controls</string>
 </resources>
