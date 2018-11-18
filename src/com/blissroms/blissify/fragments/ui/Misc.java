@@ -51,12 +51,15 @@ public class Misc extends SettingsPreferenceFragment
 
         private AppMultiSelectListPreference mAspectRatioAppsSelect;
         private ScrollAppsViewPreference mAspectRatioApps;
-
-
+private static final String KEY_DEVICE_PART = "advanced_controls";
+    private static final String KEY_DEVICE_PART_PACKAGE_NAME = "com.thht.settings.device";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+// Advanced Controls
+        if (!com.blissroms.blissify.preference.Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
+        }
             addPreferencesFromResource(R.xml.interface_misc);
             PreferenceScreen prefSet = getPreferenceScreen();
             ContentResolver resolver = getActivity().getContentResolver();
