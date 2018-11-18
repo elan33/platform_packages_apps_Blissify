@@ -87,5 +87,13 @@
             android:persistent="false"
             android:summary="@string/aspect_ratio_apps_info" />
     </PreferenceCategory>
-
+<!-- Advanced Controls -->
+    	<Preference
+        	android:key="advanced_controls"
+        	android:persistent="false"
+        	android:title="@string/advanced_controls_title">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.thht.settings.device"
+            android:targetClass="com.thht.settings.device.DeviceSettings"/>
+    	</Preference> 
 </PreferenceScreen>
