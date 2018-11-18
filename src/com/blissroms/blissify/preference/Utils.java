@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.blissroms.blissify.preference.Utils;
+package com.blissroms.blissify.preference;
 
 import android.app.Activity;
 import android.content.Context;
